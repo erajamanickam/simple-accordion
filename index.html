@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="linear-gradient(to bottom, #61daff, #656bff)">
+    <meta name="description" content="In this blog, I'm going to show you how you can easily create a accordion bootstrap">
+    <meta name="keywords" content="accordion bootstrap, simple accordion design, how to create accordion with responsive, make accordion with bootstrap">
+    <meta name="author" content="Rajamanickam">
+    <link rel="icon" href="https://rajamanickam.vercel.app/favicon-rajamanickam.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Minimal accordion design with bootstrap</title>
+</head>
+<body>
+    <main>
+        <section class="accordion-wrapper">
+            <div class="row d-flex h-100">
+                <div class="d-flex justify-content-center align-self-center w-100">
+                    <div class="container"> 
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="accordion-content">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                What is an accordion HTML?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <p>Accordion. An accordion is used to show (and hide) HTML content. Use the w3-hide class to hide the accordion content.</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                When should you use accordions?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <p>When readers only need a few key pieces of information: If readers only need some information on a page, then an accordion can help them more easily and efficiently find the information they're looking for. </p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Which class is used to create accordion?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <p>You can use any HTML element to open the accordion content. We prefer a button with a w3-block class, to span the entire width of the page (100% width).</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                                How do I keep my accordion open by default?
+                                            </button>
+                                            </h2>
+                                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>Go to accordion item which you want to keep open, In Properties there is setting "StartsExpanded", Set it to True</p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <h2 class="text-center">Simple Accordion</h2>
+                                <div class="accordion-img">
+                                    <img src="assets/img/accordion.png" class="img-responsive w-100" alt="accordion with responsive" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
